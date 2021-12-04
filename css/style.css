@@ -1,0 +1,431 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ==================== header start */
+header {
+    background: url(../images/bg_img.jpg);
+    padding-bottom: 152px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header nav .logo {
+    display: block;
+    padding: 8px 18px;
+    background: #4e9f0d;
+    color: #fff;
+    border: 3px solid #62be19;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 17px;
+    box-shadow: inset 0 0 5px #48920c;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .menu .list .link {
+    display: block;
+    padding: 37px 11px 29px 10px;
+    color: #69cf17;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu .list .link:hover,
+header nav .menu .list .link.active {
+    background: rgba(105, 207, 23, .75);
+    color: #fff;
+}
+
+header nav .menu .list .link span {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    color: #69cf17;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+}
+
+header h1 {
+    color: #69cf17;
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 150px;
+    margin-bottom: 19px;
+    line-height: 66px;
+}
+
+header .meat {
+    color: #69cf17;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 25px;
+}
+
+header p {
+    color: #dedede;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 28px;
+    margin-bottom: 75px;
+}
+
+header button {
+    padding: 28px 90px;
+    background: rgba(105, 207, 23, .75);
+    border: none;
+    font-weight: 100;
+    font-size: 60px;
+    color: #fff;
+    line-height: 46px;
+}
+
+/* ==================== main start */
+main {
+    background: #060002;
+    padding: 50px 0;
+}
+
+main .food ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-bottom: 69px;
+}
+
+main .food ul li {
+    margin-right: 48px;
+}
+
+main .food ul li a {
+    color: #7a7a7a;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .5s;
+}
+
+main .food ul li a.active,
+main .food ul li a:hover {
+    color: #69cf17;
+}
+
+main .burgers .buy .buy_top {
+    position: relative;
+    overflow: hidden;
+}
+
+main .burgers .buy .buy_top .buy_img img {
+    width: 100%;
+}
+
+main .burgers .buy .buy_top .buy_img .price {
+    display: block;
+    width: 188px;
+    padding: 20px 0;
+    background: rgba(105, 207, 23, .75);
+    text-align: center;
+    color: #dedede;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+main .burgers .buy .buy_top .buy_hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 207, 23, .9);
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+
+main .burgers .buy .buy_top .buy_hover a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+main .burgers .buy .buy_top:hover .buy_hover {
+    transform: scale(1);
+}
+
+main .burgers .buy .buy_top:hover .price {
+    opacity: 0;
+}
+
+main .burgers .buy .buy_bottom {
+    margin: 30px 0 50px;
+}
+
+main .burgers .buy .buy_bottom h2 {
+    text-transform: uppercase;
+    color: #69cf17;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+main .burgers .buy .buy_bottom p {
+    color: #dedede;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* ========================= unique start */
+.unique {
+    background: url(../images/section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0 102px;
+}
+
+.unique h2 {
+    text-transform: uppercase;
+    color: #69cf17;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.unique h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #69cf17;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.unique p {
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 29px;
+}
+
+.unique p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============= map start */
+.map {
+    padding-top: 45px;
+}
+
+.map h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    color: #69cf17;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.map .google iframe {
+    display: block;
+    width: 100%;
+}
+
+/* ========================== media start */
+
+/* lg 992 <= 1199 */
+@media(max-width: 1199px) {
+    header h1 {
+        font-size: 55px;
+        line-height: 50px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    header .meat {
+        font-size: 30px;
+        line-height: 22px;
+    }
+
+    header button {
+        font-size: 50px;
+        line-height: 35px;
+        padding: 23px 75px;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+}
+
+/* md 768 <= 991 */
+@media(max-width: 991px) {
+    header h1 {
+        font-size: 45px;
+        margin-top: 75px;
+        margin-bottom: 5px;
+    }
+
+    header .meat {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    header button {
+        font-size: 35px;
+        line-height: 30px;
+        padding: 20px 65px;
+    }
+
+    header {
+        padding-bottom: 60px;
+    }
+}
+
+/* sm 576 <= 767 */
+@media(max-width: 767px) {
+    header h1 {
+        font-size: 35px;
+        margin-top: 55px;
+        line-height: 40px;
+    }
+
+    header .meat {
+        font-size: 22px;
+    }
+
+    header {
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    header p {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    header button {
+        font-size: 30px;
+        padding: 15px 45px;
+    }
+
+    main .food ul {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    main .food ul li {
+        margin-right: 0;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    .unique{
+        padding: 30px 0 55px;
+    }
+
+    .unique h2{
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .unique p{
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .map{
+        padding-top: 25px;
+    }
+
+    .map h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* xs <= 575 */
+@media(max-width: 575px) {
+    header h1{
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 45px;
+    }
+
+    header .meat{
+        font-size: 20px;
+    }
+
+    header p{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+
+    header button{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    main .food ul li a{
+        font-size: 18px;
+    }
+
+    .unique h2{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .unique p{
+        font-size: 15px;
+    }
+
+    .map h2{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+}
